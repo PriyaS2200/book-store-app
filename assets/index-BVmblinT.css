@@ -1,1 +1,0 @@
-.books-container{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:20px}.books-container div{display:flex;flex-direction:column;justify-content:center;align-items:center;padding:20px;border:2px solid lightgrey}form{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:20px}
