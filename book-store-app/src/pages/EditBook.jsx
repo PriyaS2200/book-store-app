@@ -3,11 +3,20 @@ import "../styles/AddBook.css"
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+const initialData = {
+    name: "",
+    category: "",
+    price: "",
+    author: "",
+    publishingYear: "",
+    coverImage: "",
+    description: ""
+}
 export const EditBook = () => {
     const { id } = useParams();
     const [ isLoading, setIsLoading ] = useState(false);
     const [ error, setError ] = useState(null);
-    const [bookData, setBookData] = useState([]);
+    const [bookData, setBookData] = useState(initialData);
     const navigate = useNavigate() 
 
     useEffect(() => {

@@ -1,0 +1,35 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    box-shadow: 2px 5px 10px lightsteelblue;
+    background-color: lightcyan;
+}
+
+.nav-content {
+    text-decoration: none;
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: lightsalmon;
+    text-shadow: 2px 2px 5px aqua;
+    font-size: larger;
+}
+
+.active {
+    color: blue;
+}
+
+.nav-btn {
+    border: none;
+    text-decoration: none;
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: lightsalmon;
+    text-shadow: 2px 2px 5px aqua;
+    font-size: larger;
+    background-color: lightcyan;
+}
+
+.nav-btn:hover {
+    color: blue;
+}

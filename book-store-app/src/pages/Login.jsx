@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
 import axios from "axios";
+import "../styles/Login.css";
 
 export const Login = () => {
     const [username, setUserName] = useState("");
@@ -23,6 +24,7 @@ export const Login = () => {
     return (
         <>
         <form onSubmit={handleSubmit}>
+        <h1>Login</h1>
         <input type="text" placeholder="Enter username" 
         value={username} onChange={(e) => setUserName(e.target.value)}/>
          <input type="password" placeholder="Enter username" 

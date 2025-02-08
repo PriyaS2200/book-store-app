@@ -1,6 +1,8 @@
-
+import "../styles/Home.css";
 export const Home = () => {
     return (
-        <h1>Welcome</h1>
+        <div className="home-container">
+        <h1 className="home-title">Welcome!</h1>
+        </div>
     )
 }
