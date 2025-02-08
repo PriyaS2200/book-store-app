@@ -76,15 +76,17 @@ export const Books = () => {
         {
             books.map((book) => {
                 return (
-                    <div key={book.id}>
+                    <div key={book.id} className="book-container">
                      <img src={book.coverImage} alt={book.name} />
                      <h3>{book.name}</h3>
                      <h3>{book.author}</h3>
                      <h3>{book.category}</h3>
                      <h3>Price: ${book.price}</h3>
-                     <button onClick={()=> navigate(`/books/${book.id}`)}>View Details</button>
+                    <div className="btn-container">
+                    <button onClick={()=> navigate(`/books/${book.id}`)}>View Details</button>
                      <button onClick={() => handleDelete(book.id)}>Delete</button>
                      <button onClick={()=> navigate(`/edit/${book.id}`)}>Edit</button>
+                    </div>
                     </div>
                 )
             })

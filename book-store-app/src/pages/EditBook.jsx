@@ -2,6 +2,7 @@ import { useParams,useNavigate } from "react-router-dom"
 import "../styles/AddBook.css"
 import { useEffect, useState } from "react";
 import axios from "axios";
+import "../styles/Books.css"
 
 const initialData = {
     name: "",
@@ -22,8 +23,8 @@ export const EditBook = () => {
     useEffect(() => {
         setIsLoading(true);
         setError(null)
-        axios.get(`https://fresh-astonishing-zircon.glitch.me/books`)
-        .then((response) => setBookData(response.data.books))
+        axios.get(`https://fresh-astonishing-zircon.glitch.me/books/${id}`)
+        .then((response) => setBookData(response.data))
         .catch((error) => setError(error))
         .finally(setIsLoading(false));
     },[id])   

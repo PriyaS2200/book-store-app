@@ -1,14 +1,41 @@
 .books-container {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 20px;padding: 20px;
+    gap: 20px;
+    padding: 20px;
 }
 
-.books-container div {
+.book-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     border: 2px solid lightgrey;
+    border-radius: 10px;
+    box-shadow: 2px 5px lightgrey;
+}
+
+h1 {
+    text-align: center;
+}
+
+button, select {
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: rgb(189, 221, 231);
+    font-family: cursive;
+    font-weight: bold;
+    color: rgb(185, 171, 115);
+    text-shadow: 2px 2px lightgrey;
+}
+
+.btn-container {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
 }
